@@ -16,7 +16,7 @@ const Topics = () => {
     }
     
     return (
-        <div>
+        <div className='grid grid-cols-3 '>
            
             {
                 topics.map(topic => <Topic
