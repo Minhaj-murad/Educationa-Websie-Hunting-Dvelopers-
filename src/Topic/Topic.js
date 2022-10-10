@@ -1,11 +1,11 @@
 import React from 'react';
 
-const h2 = () => {
+const Topic = () => {
     return (
         <div>
-            <h2>this is topic</h2>
+            This is topic page
         </div>
     );
 };
 
-export default h2;
+export default Topic;
