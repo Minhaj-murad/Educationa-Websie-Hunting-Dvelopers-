@@ -1,20 +1,31 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useLoaderData } from 'react-router-dom';
+
 import Topic from '../Topic/Topic';
 
 const Topics = () => {
     const quiz = useLoaderData()
     const topics = quiz.data;
-    console.log(topics);
+    // console.log(topics);
+    const [cart,setCart]=useState([]);
+    const handleaddtoquiz =(topic) =>{
+        
+            const newcart =[...cart,topic];
+            setCart(newcart)
+        
+    }
+    
     return (
         <div>
-            <h2>This is topic page </h2>
+           
             {
                 topics.map(topic => <Topic
                 key={topic.id}
                 topic={topic}
+                handleaddtoquiz={handleaddtoquiz}
                 ></Topic>)
             }
+           
         </div>
     );
 };

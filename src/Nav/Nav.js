@@ -64,6 +64,7 @@ export const Nav = () => {
                   Statistics
                 </Link>
               </li>
+              
               <li>
                 <Link
                   to="/blogs"
