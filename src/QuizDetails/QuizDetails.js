@@ -1,6 +1,10 @@
 import React from 'react';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+  import {faEye } from '@fortawesome/free-solid-svg-icons'
+
+  const element = <FontAwesomeIcon icon={faEye} />
 const QuizDetails = ({ques}) => {
     
     console.log(ques);
@@ -8,47 +12,49 @@ const QuizDetails = ({ques}) => {
     
        const handlecheckanswer1 = (options)=> {
         if (correctAnswer === options[0]){
-            toast('RIGHT answer');
+            toast.success('RIGHT answer');
           }
           else {
-            toast('sry better luck next time');
+            toast.warning('Wrong answer! better luck next time');
           }
        }
      
        const handlecheckanswer2 = (options)=> {
         if (correctAnswer === options[1]){
-            toast('Right answer');
+            toast.success('Right answer');
           }
           else {
-            toast('sry better luck next time');
+            toast.warning('Wrong answer! better luck next time');
           }
        }
      
        const handlecheckanswer3 = (options)=> {
         if (correctAnswer === options[2]){
-            toast('Right answer');
+            toast.success('Right answer');
           }
           else {
-            toast('sry better luck next time');
+            toast.warning('Wrong answer! better luck next time');
           }
        }
      
        const handlecheckanswer4 = (options)=> {
         if (correctAnswer === options[3]){
-            toast('Right answer');
+            toast.success('Right answer');
           }
           else {
-            toast('sry better luck next time');
+            toast.warning('Wrong answer! better luck next time');
           }
        }
      
-     
+     const correctAns =()=>{
+        toast.info(`Correct Answer is: ${correctAnswer}`)
+     }
     
     return (
         <div className='mb-12 borderflex flex-col max-w-screen-lg overflow-hidden bg-white border rounded shadow-xl lg:flex-row sm:mx-auto'>
             
-            <div className='text-amber-600 text-2xl mb-4 '>
-            <h2>{question.slice(3,1000)}</h2>
+            <div className='text-amber-600 text-2xl mb-4 flex justify-between'>
+            <h2>{question.slice(3,1000)}</h2> <span onClick={()=>correctAns()}> {element}</span>
             </div>
             
             <div className='text-gray-900 text-xl grid grid-cols-2 gap-4'>
