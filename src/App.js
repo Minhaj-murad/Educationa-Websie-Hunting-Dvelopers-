@@ -2,6 +2,7 @@
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import './App.css';
 import Blog from './Blog/Blog';
+import Error from './Error/Error';
 import Home from './Home/Home';
 import Main from './Main/Main';
 import Quiz from './Quiz/Quiz';
@@ -14,6 +15,7 @@ function App() {
       {
         path:'/',
         element:<Main></Main>,
+        errorElement:<Error></Error>,
         children:[
           {
             path:'/',
