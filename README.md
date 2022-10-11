@@ -1,3 +1,5 @@
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -68,3 +70,12 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+## Project Code
+ https://github.com/programming-hero-web-course2/b6-quiz-crackerz-Minhaj-murad
+
+ ## Live website Link
+ https://chimerical-tapioca-3db43d.netlify.app/
+
+ ## Project Description
+  This code is designed for participating quiz tasks where several Web development related tools are discussed through multiple choice and answer.By this we learned about React Router,Basic Context API, Recharts, Components ,props drilling etc.We also learned how to declare path,element,loader,Outlet components etc.By using outlet we created some child components also.How to fetch data by using loader and how to search any id or data by using loader is a great start for exploring Web development.
