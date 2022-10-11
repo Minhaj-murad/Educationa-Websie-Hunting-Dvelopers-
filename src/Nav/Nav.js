@@ -159,56 +159,47 @@ export const Nav = () => {
                     </div>
                     <nav>
                       <ul class="space-y-4">
-                        <li>
-                          <a
-                            href="/"
-                            aria-label="Our product"
-                            title="Our product"
-                            class="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
-                          >
-                            Product
-                          </a>
-                        </li>
-                        <li>
-                          <a
-                            href="/"
-                            aria-label="Our product"
-                            title="Our product"
-                            class="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
-                          >
-                            Features
-                          </a>
-                        </li>
-                        <li>
-                          <a
-                            href="/"
-                            aria-label="Product pricing"
-                            title="Product pricing"
-                            class="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
-                          >
-                            Pricing
-                          </a>
-                        </li>
-                        <li>
-                          <a
-                            href="/"
-                            aria-label="About us"
-                            title="About us"
-                            class="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
-                          >
-                            About us
-                          </a>
-                        </li>
-                        <li>
-                          <a
-                            href="/"
-                            class="inline-flex items-center justify-center w-full h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-deep-purple-accent-400 hover:bg-deep-purple-accent-700 focus:shadow-outline focus:outline-none"
-                            aria-label="Sign up"
-                            title="Sign up"
-                          >
-                            Sign up
-                          </a>
-                        </li>
+                      <li>
+                <Link
+                  to='/home'
+                  aria-label="Our product"
+                  title="Our product"
+                  class="font-medium tracking-wide text-gray-900 transition-colors duration-200 hover:text-teal-accent-400"
+                >
+                  Home
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="/topic"
+                  aria-label="Our product"
+                  title="Our product"
+                  class="font-medium tracking-wide text-gray-900 transition-colors duration-200 hover:text-teal-accent-400"
+                >
+                 Topics
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="/statistics"
+                  aria-label="Product pricing"
+                  title="Product pricing"
+                  class="font-medium tracking-wide text-gray-900 transition-colors duration-200 hover:text-teal-accent-400"
+                >
+                  Statistics
+                </Link>
+              </li>
+              
+              <li>
+                <Link
+                  to="/blogs"
+                  aria-label="About us"
+                  title="About us"
+                  class="font-medium tracking-wide text-gray-900 transition-colors duration-200 hover:text-teal-accent-400"
+                >
+                 Blog
+                </Link>
+              </li>
                       </ul>
                     </nav>
                   </div>

@@ -12,49 +12,51 @@ const QuizDetails = ({ques}) => {
     
        const handlecheckanswer1 = (options)=> {
         if (correctAnswer === options[0]){
-            toast.success('RIGHT answer');
+            toast.success('RIGHT answer',{ autoClose: 500 });
           }
           else {
-            toast.warning('Wrong answer! better luck next time');
+            toast.warning('Wrong answer! better luck next time',{ autoClose: 500 });
           }
        }
      
        const handlecheckanswer2 = (options)=> {
         if (correctAnswer === options[1]){
-            toast.success('Right answer');
+            toast.success('Right answer',{ autoClose: 500 });
           }
           else {
-            toast.warning('Wrong answer! better luck next time');
+            toast.warning('Wrong answer! better luck next time',{ autoClose: 500 });
           }
        }
      
        const handlecheckanswer3 = (options)=> {
         if (correctAnswer === options[2]){
-            toast.success('Right answer');
+            toast.success('Right answer',{ autoClose: 500 });
           }
           else {
-            toast.warning('Wrong answer! better luck next time');
+            toast.warning('Wrong answer! better luck next time',{ autoClose: 500 });
           }
        }
      
        const handlecheckanswer4 = (options)=> {
         if (correctAnswer === options[3]){
-            toast.success('Right answer');
+            toast.success('Right answer',{ autoClose: 500 });
           }
           else {
-            toast.warning('Wrong answer! better luck next time');
+            toast.warning('Wrong answer! better luck next time',{ autoClose: 500 });
           }
        }
+       
      
      const correctAns =()=>{
-        toast.info(`Correct Answer is: ${correctAnswer}`)
+        toast.info(`Correct Answer is: ${correctAnswer}`,{ autoClose: 500 })
      }
     
     return (
         <div className='mb-12 borderflex flex-col max-w-screen-lg overflow-hidden bg-white border rounded shadow-xl lg:flex-row sm:mx-auto'>
             
             <div className='text-amber-600 text-2xl mb-4 flex justify-between'>
-            <h2>{question.slice(3,1000)}</h2> <span onClick={()=>correctAns()}> {element}</span>
+            <h2>{question.slice(3,1000)}</h2> 
+            <span onClick={()=>correctAns()}> {element}</span>
             </div>
             
             <div className='text-gray-900 text-xl grid grid-cols-2 gap-4'>
