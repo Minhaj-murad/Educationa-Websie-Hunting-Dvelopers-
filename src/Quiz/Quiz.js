@@ -1,7 +1,7 @@
 import React from 'react';
 import { useLoaderData } from 'react-router-dom';
 import QuizDetails from '../QuizDetails/QuizDetails';
-import Statistics from './Statistics/Statistics';
+import Statistics from '../Statistics/Statistics';
 
 
 
@@ -29,7 +29,7 @@ const Quiz = () => {
             }
            
           </div>
-          <Statistics questions={questions}></Statistics>
+          
           
         </div>
       )

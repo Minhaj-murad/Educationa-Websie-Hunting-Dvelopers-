@@ -73,7 +73,9 @@ const Topics = () => {
               The term “web development tools” refers to software and apps that provide web developers with the ability to debug and test the code and interface of the website or application they're creating.
               </p>
             </div>
-            
+            <div>
+             
+            </div>
           </div>
         </div>
       </div>
