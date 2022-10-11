@@ -6,7 +6,7 @@ import Error from './Error/Error';
 import Home from './Home/Home';
 import Main from './Main/Main';
 import Quiz from './Quiz/Quiz';
-import Statistics from './Statistics/Statistics';
+import Statistics from './Quiz/Statistics/Statistics';
 import Topics from './Topics/Topics';
 
 function App() {
@@ -32,12 +32,13 @@ function App() {
           },
           {
             path:'/statistics',
+            
             element:<Statistics></Statistics>
           },
           {
             path:'topic/:id',
             loader:({params})=> fetch(`https://openapi.programming-hero.com/api/quiz/${params.id}`),
-            element:<Quiz></Quiz>
+            element:<Quiz></Quiz>,
           },
           
           {

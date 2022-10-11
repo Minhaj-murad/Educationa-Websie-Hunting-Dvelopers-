@@ -5,14 +5,16 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
   import {faEye } from '@fortawesome/free-solid-svg-icons'
 import Option from '../Options/Option';
 
+
+
   const element = <FontAwesomeIcon icon={faEye} />
 const QuizDetails = ({ques}) => {
     
     
     const { question, correctAnswer, options} = ques;
     
-       
-     
+      
+     console.log(question);
      const correctAns =()=>{
         toast.info(`Correct Answer is: ${correctAnswer}`,{ autoClose: 700 })
      }
@@ -29,7 +31,12 @@ const QuizDetails = ({ques}) => {
             {
                 options.map(option => <Option option={option} correctAnswer={correctAnswer}></Option>)
             }
+            
             </div>
+            
+             
+            
+            
             <ToastContainer />
         </div>
         

@@ -28,6 +28,7 @@ const Topic = ({topic,handleaddtoquiz}) => {
              </div>
              
          </div>
+         
         </div>
         
     );
